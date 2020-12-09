@@ -5,11 +5,6 @@ services:
     image: python_build
     entrypoint: ['/bin/sh', '-c', 'while true; do sleep 10; done']
     working_dir: /opt/build
-    environment:
-      AWS_DEFAULT_REGION: dummy
-      AWS_REGION: dummy
-      AWS_ACCESS_KEY_ID: dummy
-      AWS_SECRET_ACCESS_KEY: dummy
     build:
       context: .
       dockerfile: Dockerfile
